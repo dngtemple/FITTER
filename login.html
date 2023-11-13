@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+
+    <meta name="viewport" content="width-deive-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Poppins');
+
+        *{
+            margin:0px;
+            padding:0px;
+            
+        }
+        @media (max-width:550px){
+
+    
+
+
+
+            .login_background{
+                width:100%;
+                height: 100vh;
+                background-color: #F7c910;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-family: poppins;
+            }
+
+            .login_ground{
+                width:80%;
+                height:42vh;
+                /* background-color: aliceblue; */
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top:-80px;
+            }
+            .login_ground > div{
+                margin-bottom: 10px;
+            }
+
+            .login_title{
+                text-align: center;
+            }
+
+            
+            .check{
+                width:60%;
+                height:10px;
+                /* background-color: aqua; */
+                display: flex;
+                justify-content: space-around;
+            }
+
+            label{
+                font-size:13px;
+                line-height:10px;
+            }
+
+            .radio{
+                appearance: none;
+                width:13px;
+                height: 13px;
+                background-color: #F7c910;
+                border:2px solid rgba(0, 0, 0, 0.2);
+                border-radius: 6.5px;
+            }
+
+            .radio:checked{
+                background-color: white;
+            }
+
+            .inputs{
+                width: 100%;
+            }
+
+            .inputs input{
+                width:100%;
+                height:30px;
+                outline: none;
+                text-indent: 10px;
+                border-radius: 5px;
+                border:1px solid gray;
+                margin-top: 10px;
+                background-color: #e3ba12;
+                border: none;
+            }
+
+            .inputs input::placeholder{
+                color:black;
+            }
+
+   
+
+            .forgot{
+                align-self: flex-end;
+                color:#104b5f;
+                font-weight: 200;
+
+            }
+
+            .login_ground button{
+                width:60%;
+                height:30px;
+                background-color: white;
+                border-radius: 5px;
+                border:1px solid lightgray;
+                margin-top:20px;
+                border:none;
+            }
+
+            .register{
+                margin-top:20px;
+            }
+
+            .reg{
+                color:white;
+                font-size: 13px;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="login_background">
+        <div class="login_ground">
+            <div>
+               <h2 class="login_title">Log In</h2>
+            </div>
+    
+            <div class="check">
+                <p>
+                    <input class="radio" type="radio" name="rad" value="user">
+                    <label for="user">User</label>
+                </p>
+
+                <p>
+                    <input  class="radio" type="radio" name="rad" value="mechanic">
+                    <label for="mechanic">Mechanic</label>
+                </p>
+            </div>
+
+            <div class="inputs">
+                <input type="text" placeholder="Username (Mobile number)">
+
+                <input type="text" placeholder="Password">
+            </div>
+
+            <h5 class="forgot">Forget Password?</h5>
+
+            <button class="button">LOG IN</button>
+
+            <p class="register">Don't have an account?   <span class="reg">Register</span></p>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+    </script>
+    
+</body>
+</html>
